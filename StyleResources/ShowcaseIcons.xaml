@@ -1,0 +1,18 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <!--Images-->
+    <BitmapImage x:Key="ShipIcon" UriSource="../Images/ShipIcon.png"/>
+    <BitmapImage x:Key="TodoListIcon" UriSource="/Images/TodoListWhite.png"/>
+    <BitmapImage x:Key="PlaceholderIcon" UriSource="../Images/PlaceholderIcon.png"/>
+
+    <!--Icon Background colors and mouseovers-->
+    <SolidColorBrush x:Key="IconsBackground" Color="{StaticResource PrimaryColor}"/>
+    <SolidColorBrush x:Key="SelectedIconsBackgroud" Color="AliceBlue"/>
+
+    <!--Icon parameters-->
+    <Style x:Key="ShowcaseIcons" TargetType="Image">
+        <Setter Property="Height" Value="1300"></Setter>
+        <Setter Property="Width" Value="150"></Setter>
+    </Style>
+    
+</ResourceDictionary>

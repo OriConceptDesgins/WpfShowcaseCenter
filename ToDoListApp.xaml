@@ -1,0 +1,52 @@
+﻿<Page x:Class="WpfShowcaseCenter.ToDoListApp"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfShowcaseCenter"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="ToDoListApp">
+
+    <Grid Style="{StaticResource ShowcaseGridDark}">
+        <!--
+        Have a dynamic listbox using databinding.   Have CRUD operations , make MVP first.
+        The Add task interface would come below :  it includes task description, estimated duration and priority rating(1 to 5)
+          -->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.1*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="0.1*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.3*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="0.1*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        
+        <ListBox x:Name="TheList" Grid.Column="1" Grid.Row="1" Margin="5">
+            
+        </ListBox>
+
+        <StackPanel  Grid.Column="1" Grid.Row="3">
+            <TextBox Text="Task Description"/>
+            <WrapPanel>
+                <TextBlock Text="Task Priority :" VerticalAlignment="Center"/>
+                <ComboBox Text="Priority" x:Name="PriorityComboBox" Width="75" Margin="10" SelectionChanged="PriorityComboBox_SelectionChanged">
+                    <RadioButton x:Name="Star1" GroupName="StarRating" Checked="Star_Checked" Style="{StaticResource StarRadioButtonStyle}" />
+                    <RadioButton x:Name="Star2" GroupName="StarRating" Checked="Star_Checked" Style="{StaticResource StarRadioButtonStyle}" />
+                    <RadioButton x:Name="Star3" GroupName="StarRating" Checked="Star_Checked" Style="{StaticResource StarRadioButtonStyle}" />
+                    <RadioButton x:Name="Star4" GroupName="StarRating" Checked="Star_Checked" Style="{StaticResource StarRadioButtonStyle}" />
+                    <RadioButton x:Name="Star5" GroupName="StarRating" Checked="Star_Checked" Style="{StaticResource StarRadioButtonStyle}" />
+                </ComboBox>
+                <TextBlock Text="Set Deadline(optional) :" VerticalAlignment="Center"/>
+                <DatePicker x:Name="DeadlinePicker" Width="200" Margin="10"/>
+                <Button Content="Add Task to list" Margin="10" Padding="5"/>
+            </WrapPanel>
+            
+
+        </StackPanel>
+        
+    </Grid>
+</Page>

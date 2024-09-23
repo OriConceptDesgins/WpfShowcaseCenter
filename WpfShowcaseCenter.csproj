@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\PlaceholderIcon.png" />
+    <None Remove="Images\TodoListWhite.png" />
+    <None Remove="ShipIcon.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\PlaceholderIcon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\TodoListWhite.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\ShipIcon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+</Project>
