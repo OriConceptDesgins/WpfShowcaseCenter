@@ -24,28 +24,45 @@
             <RowDefinition Height="0.1*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        
-        <ListBox x:Name="TheList" Grid.Column="1" Grid.Row="1" Margin="5">
-            
-        </ListBox>
+
+        <DataGrid ItemsSource="{Binding Tasks}" AutoGenerateColumns="False" Grid.Column="1" Grid.Row="1">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Priority" Binding="{Binding Priority}" Width="50"/>
+                <DataGridTextColumn Header="Description" Binding="{Binding Description}" Width="290"/>
+                <DataGridTextColumn Header="Deadline" Binding="{Binding Deadline}" Width="150"/>
+                <DataGridCheckBoxColumn Header="Completed" Binding="{Binding IsCompleted}" Width="80"/>
+                <DataGridTemplateColumn Header="Actions" Width="100">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <WrapPanel Orientation="Horizontal">
+                                <Button Content="Edit" Click="Button_EditTask" Tag="{Binding}" Margin="4,0,4,0" Padding="3"/>
+                                <Button Content="Delete" Click="Button_DeleteTask" Tag="{Binding}" Margin="4,0,4,0" Padding="3"/>
+                            </WrapPanel>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
 
         <StackPanel  Grid.Column="1" Grid.Row="3">
-            <TextBox Text="Task Description"/>
+            <TextBox x:Name="DescriptionTextBox" Text="{Binding TaskDescription, UpdateSourceTrigger=PropertyChanged}" />
             <WrapPanel>
                 <TextBlock Text="Task Priority :" VerticalAlignment="Center"/>
-                <ComboBox Text="Priority" x:Name="PriorityComboBox" Width="75" Margin="10" SelectionChanged="PriorityComboBox_SelectionChanged">
-                    <RadioButton x:Name="Star1" GroupName="StarRating" Checked="Star_Checked" Style="{StaticResource StarRadioButtonStyle}" />
-                    <RadioButton x:Name="Star2" GroupName="StarRating" Checked="Star_Checked" Style="{StaticResource StarRadioButtonStyle}" />
-                    <RadioButton x:Name="Star3" GroupName="StarRating" Checked="Star_Checked" Style="{StaticResource StarRadioButtonStyle}" />
-                    <RadioButton x:Name="Star4" GroupName="StarRating" Checked="Star_Checked" Style="{StaticResource StarRadioButtonStyle}" />
-                    <RadioButton x:Name="Star5" GroupName="StarRating" Checked="Star_Checked" Style="{StaticResource StarRadioButtonStyle}" />
+                <ComboBox SelectedValue="{Binding SelectedPriority}" SelectedValuePath="Content" Width="75" Margin="10">
+                    <ComboBoxItem Content="1" />
+                    <ComboBoxItem Content="2" />
+                    <ComboBoxItem Content="3" />
+                    <ComboBoxItem Content="4" />
+                    <ComboBoxItem Content="5" />
                 </ComboBox>
                 <TextBlock Text="Set Deadline(optional) :" VerticalAlignment="Center"/>
-                <DatePicker x:Name="DeadlinePicker" Width="200" Margin="10"/>
-                <Button Content="Add Task to list" Margin="10" Padding="5"/>
+                <DatePicker x:Name="DeadlinePicker" Width="200" Margin="10" SelectedDate="{Binding Deadline}"/>
+                <Button Content="Add Task to list" Margin="10" Padding="5" Click="Button_AddToTaskList"/>
             </WrapPanel>
-            
+        </StackPanel>
 
+        <StackPanel Grid.Column="0" Grid.Row="1" VerticalAlignment="Bottom">
+            <Button Content="Clear" Click="Button_ClearTasks" Tag="{Binding}" Margin="4,5,4,5" Padding="3"/>
         </StackPanel>
         
     </Grid>

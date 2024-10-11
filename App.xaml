@@ -6,12 +6,12 @@
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="./StyleResources/RadioButtons.xaml"/>
                 <ResourceDictionary Source="./StyleResources/ColorTheme.xaml"/>
                 <ResourceDictionary Source="./StyleResources/ShowcaseButton.xaml"/>
                 <ResourceDictionary Source="./StyleResources/ShowcaseGrid.xaml"/>
                 <ResourceDictionary Source="./StyleResources/ShowcaseIcons.xaml"/>
                 <ResourceDictionary Source="./StyleResources/ShowcaseText.xaml"/>
+                <ResourceDictionary Source="./StyleResources/ToDoListView.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>

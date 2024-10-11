@@ -32,7 +32,7 @@
             </StackPanel>
         </Viewbox>
         <Border  CornerRadius="150" Width="100" Height="50" Grid.Column="1" Grid.Row="2" HorizontalAlignment="Right" VerticalAlignment="Top">
-            <Button BorderBrush="Transparent" BorderThickness="0" Style="{StaticResource ProjectStartButton}">
+            <Button BorderBrush="Transparent" BorderThickness="0" Style="{StaticResource ProjectStartButton}" Click="Button_StartApp">
                 <Label FontSize="16" Content="Start App"/>
             </Button>
         </Border>

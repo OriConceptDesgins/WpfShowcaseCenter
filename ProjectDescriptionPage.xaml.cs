@@ -32,5 +32,18 @@ namespace WpfShowcaseCenter
             ProjectDescription.Text = Description;
             ProjectTitle.Content = TitleText;
         }
+
+        private void Button_StartApp(object sender, RoutedEventArgs e)
+        {
+            switch (TitleText)
+            {
+                case "ToDo List":
+                    NavigationService.Navigate(new ToDoListApp());
+                    break;
+
+                default:
+                    return;
+            }
+        }
     }
 }

@@ -26,7 +26,7 @@
         <Setter Property="TextWrapping" Value="Wrap"></Setter>
     </Style>
 
-    <Style x:Key="PlaceholderTexte" TargetType="TextBox">
+    <Style x:Key="PlaceholderText" TargetType="TextBox">
         <Setter Property="Foreground" Value="Gray" />
         <Setter Property="Text" Value="Placeholder text" />
         <Style.Triggers>
@@ -38,5 +38,13 @@
                 <Setter Property="Text" Value="" />
             </Trigger>
         </Style.Triggers>
+    </Style>
+
+    <Style x:Key="LightText" TargetType="TextBlock">
+        <Setter Property="FontWeight" Value="Bold"></Setter>
+        <Setter Property="FontSize" Value="14"></Setter>
+        <Setter Property="Foreground" Value="{StaticResource LightBrush}"></Setter>
+        <Setter Property="Width" Value="Auto"></Setter>
+        <Setter Property="FontFamily" Value="Segoe UI Black"></Setter>
     </Style>
 </ResourceDictionary>
