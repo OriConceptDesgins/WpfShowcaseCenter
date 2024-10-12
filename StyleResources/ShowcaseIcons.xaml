@@ -4,6 +4,7 @@
     <BitmapImage x:Key="ShipIcon" UriSource="../Images/ShipIcon.png"/>
     <BitmapImage x:Key="TodoListIcon" UriSource="/Images/TodoListWhite.png"/>
     <BitmapImage x:Key="PlaceholderIcon" UriSource="../Images/PlaceholderIcon.png"/>
+    <BitmapImage x:Key="SnakeGameIcon" UriSource="../Images/SnakeGameIcon.png"/>
 
     <!--Icon Background colors and mouseovers-->
     <SolidColorBrush x:Key="IconsBackground" Color="{StaticResource PrimaryColor}"/>

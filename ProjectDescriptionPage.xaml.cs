@@ -41,6 +41,10 @@ namespace WpfShowcaseCenter
                     NavigationService.Navigate(new ToDoListApp());
                     break;
 
+                case "Snake Game":
+                    NavigationService.Navigate(new SnakeGame());
+                    break;
+
                 default:
                     return;
             }

@@ -10,8 +10,13 @@
 
   <ItemGroup>
     <None Remove="Images\PlaceholderIcon.png" />
+    <None Remove="Images\SnakeGameIcon.png" />
     <None Remove="Images\TodoListWhite.png" />
     <None Remove="ShipIcon.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\SnakeGameIcon.png" />
   </ItemGroup>
 
   <ItemGroup>
