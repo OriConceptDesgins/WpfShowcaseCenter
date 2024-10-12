@@ -45,6 +45,10 @@ namespace WpfShowcaseCenter
                     NavigationService.Navigate(new SnakeGame());
                     break;
 
+                case "TicTacToe":
+                    NavigationService.Navigate(new TicTacToe());
+                    break;
+
                 default:
                     return;
             }

@@ -15,8 +15,7 @@ namespace WpfShowcaseCenter
             { "ToDo List", ("/Images/ToDoListWhite.png", "This is a To do list app.") },
             { "Placeholder Icon", ("/Images/PlaceholderIcon.png", "This is a placeholder icon.") },
             { "Snake Game", ("/Images/SnakeGameIcon.png", "Play the classic Snake game.") },
-            { "Tetris", ("/Images/TetrisImage.png", "Play the classic Tetris game.") },
-            { "Tic Tac Toe", ("/Images/TicTacToeImage.png", "Play Tic Tac Toe.") },
+            { "Tic Tac Toe", ("/Images/TicTacToeIcon.png", "Play Tic Tac Toe.") },
             { "Memory Game", ("/Images/MemoryGameImage.png", "A memory matching game.") }
         };
 

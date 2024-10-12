@@ -60,8 +60,8 @@
                 </Border>
 
                 <Border CornerRadius="20" Background="{StaticResource IconsBackground}" BorderThickness="20" Height="220" Width="220" Margin="1 0" MouseEnter="Border_MouseEnter" MouseLeave="Border_MouseLeave">
-                    <Button Background="Transparent" ToolTip="Snake" BorderThickness="0" Height="200" Width="200" Padding="0" Click="IconButtonLeftClick" HorizontalAlignment="Center" VerticalAlignment="Center">
-                        <Image Cursor="Hand"  Source="/Images/PlaceholderIcon.png" Style="{StaticResource ShowcaseIcons}" Height="150" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Button Background="Transparent" ToolTip="TicTacToe" BorderThickness="0" Height="200" Width="200" Padding="0" Click="IconButtonLeftClick" HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <Image Cursor="Hand"  Source="{StaticResource TicTacToeIcon}" Style="{StaticResource ShowcaseIcons}" Height="150" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                     </Button>
                 </Border>
 

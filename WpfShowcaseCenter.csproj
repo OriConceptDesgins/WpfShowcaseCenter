@@ -11,6 +11,7 @@
   <ItemGroup>
     <None Remove="Images\PlaceholderIcon.png" />
     <None Remove="Images\SnakeGameIcon.png" />
+    <None Remove="Images\TicTacToeIcon.png" />
     <None Remove="Images\TodoListWhite.png" />
     <None Remove="ShipIcon.png" />
   </ItemGroup>
@@ -23,6 +24,7 @@
     <Resource Include="Images\PlaceholderIcon.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="Images\TicTacToeIcon.png" />
     <Resource Include="Images\TodoListWhite.png" />
   </ItemGroup>
 

@@ -1,7 +1,7 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
     <!--Images-->
-    <BitmapImage x:Key="ShipIcon" UriSource="../Images/ShipIcon.png"/>
+    <BitmapImage x:Key="TicTacToeIcon" UriSource="../Images/TicTacToeIcon.png"/>
     <BitmapImage x:Key="TodoListIcon" UriSource="/Images/TodoListWhite.png"/>
     <BitmapImage x:Key="PlaceholderIcon" UriSource="../Images/PlaceholderIcon.png"/>
     <BitmapImage x:Key="SnakeGameIcon" UriSource="../Images/SnakeGameIcon.png"/>
